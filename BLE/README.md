@@ -9,6 +9,6 @@ A lot of work has been done by [Neil Kolban](https://github.com/nkolban/esp32-sn
 
 Content here:
 
-**GoBLE reciever 0.1** is the first working example, where the GoBLE app is connecting to the ESP32 and the sent data are shown in the serial console.
-**GoBLE reciever 0.2** has many lines removed that are not neccesary for the program to work.
-**GoBLE reciever 0.3** parses the recieved data (multitouch - up to 6 keys!) into an array and the two values positionX and positionY.
+- **GoBLE reciever 0.1** is the first working example, where the GoBLE app is connecting to the ESP32 and the sent data are shown in the serial console.
+- **GoBLE reciever 0.2** has many lines removed that are not neccesary for the program to work.
+- **GoBLE reciever 0.3** parses the recieved data (multitouch - up to 6 keys!) into an array and the two values positionX and positionY.
