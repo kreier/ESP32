@@ -15,7 +15,6 @@
 #define SERIALPORT_UUID "0000dfb1-0000-1000-8000-00805f9b34fb" // is SerialPortID
 
 BLEServer *pServer = NULL;
-BLECharacteristic * SerialCharacteristic;
 bool deviceConnected = false;
 bool oldDeviceConnected = false;
 uint8_t txValue = 0;
