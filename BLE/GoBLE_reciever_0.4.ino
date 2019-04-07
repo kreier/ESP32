@@ -44,6 +44,7 @@ class MyCallbacks: public BLECharacteristicCallbacks {
 
       if (rxValue.length() > 0) {
         Serial.print("Received Value: ");
+        digitalWrite(ledPin, HIGH);
         for (int i = 0; i < rxValue.length(); i++) {
           Serial.print(rxValue[i], HEX);
           Serial.print(" ");
@@ -67,10 +68,11 @@ class MyCallbacks: public BLECharacteristicCallbacks {
         Serial.print("  joystickY: ");
         Serial.print(joystickY);
         Serial.print("  -  ");
-        Serial.print((joystickX - 127) + (joystickY - 127));
+        Serial.print((joystickX - 128) + (joystickY - 128));
         Serial.print("     ");
-        Serial.print((joystickX - 127) - (joystickY - 127));
+        Serial.print((joystickX - 128) - (joystickY - 128));
         Serial.println(" ");
+        digitalWrite(ledPin, LOW);
       }
    }
 };
@@ -78,6 +80,7 @@ class MyCallbacks: public BLECharacteristicCallbacks {
 void setup() {
   Serial.begin(115200);
   pinMode(ledPin, OUTPUT);  
+  digitalWrite(ledPin, HIGH);
   // Create the BLE Device  
   BLEDevice::init("ESP32 BLE Reciever");
   // Create the BLE Server - to advertise the service, that the iPhone App can connect to
@@ -114,16 +117,12 @@ void loop() {
         pServer->startAdvertising(); // restart advertising
         Serial.println("start advertising");
         oldDeviceConnected = deviceConnected;
-        dark = 300; // not connected
+        digitalWrite(ledPin, HIGH); // not connected
     }
-    digitalWrite(ledPin, HIGH);
-    delay(50);
     // connecting
     if (deviceConnected && !oldDeviceConnected) {
         oldDeviceConnected = deviceConnected;
         Serial.println("BLE connected!");
-        dark = 3000; // connected
+        digitalWrite(ledPin, LOW); // connected
     }
-    digitalWrite(ledPin, LOW);
-    delay(dark);
 }
