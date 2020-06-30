@@ -1,11 +1,10 @@
 /* Blink */
 // T-Koala:    5
 // Wemos lite: 4
-// LORA915:    2
+// LORA915:    2   and NodeMCU, D1 R32 (Arduino size)
 // T8 V1.7:    21
 // T-Dislay:   
-// NodeMCU:    2
-// ATMega2560: 13
+// ATMega2560: 13  and Arduino Uno, Leonardo
 
 
 // int ledPin = LED_BUILTIN;
