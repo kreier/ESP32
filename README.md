@@ -8,11 +8,29 @@ The ESP32 are well suited for our data collection project at AISVN with many ana
 
 ![Webserver LED control](https://raw.githubusercontent.com/kreier/python2018/master/micropython/webserver/20191216.gif)
 
-This repository collects smaller sniplets and projects that don't require its own repository. Some of these are:
+This repository collects smaller [sniplets](sniplets) and projects that don't require its own repository. Some of these are:
 
-- __Blink2020__ only short flashing, HIGH/LOW easier to alter
-- __Blink2020sweep__ find the pin the LED is attached to (different with every board ...)
-- __ESP32_power_consumption__ test script to place the ESP32 in different power modes to measure the energy consumption
+- [Blink2020](sniplets/Blink2020.ino) only short flashing, HIGH/LOW easier to alter
+- [Blink2020sweep](sniplets/Blink2020sweep.ino) find the pin the LED is attached to (different with every board ...)
+- [ESP32 power consumption](ESP32_power_consumtion.ino) test script to place the ESP32 in different power modes to measure the energy consumption
+- [I2C scanner](sniplets/i2c_scan.ino) scans the i2c bus for devices
+- [i2cdetect](sniplets/i2cdetect.ino) replicates the output of the Raspberry Pi output. Here with rtc and flash on ZS-042:
+
+```
+i2cdetect
+Scanning address range 0x00-0x7F
+ 
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+50: -- -- -- -- -- -- -- 57 -- -- -- -- -- -- -- --  
+60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- --  
+70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+
+```
 
 ## History
 
