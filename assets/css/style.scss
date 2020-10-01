@@ -1,0 +1,16 @@
+---
+---
+
+// css for kreier.github.io/            #original
+
+$header-bg-color: #085899;           // #159957 bottom right corner
+$header-bg-color-secondary: #457999; // #7EA7D3 top left corner
+
+$body-link-color: #0000E6;           // #7EA7D3
+$blockquote-text-color: #819198;
+
+$section-headings-color: #00004D;    // #159957
+
+$code-text-color: #191A1A;           // #494D4E;
+
+@import "{{ site.theme }}";
