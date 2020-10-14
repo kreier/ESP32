@@ -1,4 +1,5 @@
 /* Blink sweep to find LED pin */
+// created July 2020, last updated 2020-10-14
 // LORA915:        2   and ESP8266 NodeMCU, D1 R32 (Arduino size), DOIT ESP32 DEVKIT V1
 // Wemos LOLIN32:  4
 // T-Koala:        5   and T-Energy, 
