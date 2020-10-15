@@ -1,6 +1,8 @@
 /* Serial Sweep */
 
-int ledPin = 13;
+// Open Tools > Serial Plotter [Ctrl + Shift + L] to see the sine wave export by the Arduino/ESP
+
+int ledPin = 2;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
