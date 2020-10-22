@@ -10,11 +10,11 @@ The ESP32 are well suited for our data collection project at AISVN with many ana
 
 This repository collects smaller [sniplets](sniplets) and projects that don't require its own repository. Some of these are:
 
-- [Blink2020](sniplets/Blink2020.ino) only short flashing, HIGH/LOW easier to alter
-- [Blink2020sweep](sniplets/Blink2020sweep.ino) find the pin the LED is attached to (different with every board ...)
-- [ESP32 power consumption](ESP32_power_consumtion.ino) test script to place the ESP32 in different power modes to measure the energy consumption
-- [I2C scanner](sniplets/i2c_scan.ino) scans the i2c bus for devices
-- [i2cdetect](sniplets/i2cdetect.ino) replicates the output of the Raspberry Pi output. Here with rtc and flash on ZS-042:
+- [Blink2020](sniplets/Blink2020) only short flashing, HIGH/LOW easier to alter
+- [Blink2020sweep](sniplets/Blink2020sweep) find the pin the LED is attached to (different with every board ...)
+- [ESP32 power consumption](ESP32_power_consumtion) test script to place the ESP32 in different power modes to measure the energy consumption
+- [I2C scanner](sniplets/i2c_scan) scans the i2c bus for devices
+- [i2cdetect](sniplets/i2cdetect) replicates the output of the Raspberry Pi output. Here with rtc and flash on ZS-042:
 
 ```
 i2cdetect
@@ -31,6 +31,8 @@ Scanning address range 0x00-0x7F
 70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
 
 ```
+
+- [startup-post](startup-post) See a message at [https://sites.google.com/view/startup-post](https://sites.google.com/view/startup-post) after a succesfull boot and internet connection of your IoT project.
 
 ## History
 
