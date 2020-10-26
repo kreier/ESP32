@@ -9,7 +9,7 @@
 
 
 // int ledPin = LED_BUILTIN;
-int ledPin = 5;
+int ledPin = 2;
 bool light = HIGH;    // LORA915, T-Koala, T8, Arduino
 //bool light = LOW;   // WEMOS Lite, ESP8266 NODEMCU
 bool dark  = !light;
