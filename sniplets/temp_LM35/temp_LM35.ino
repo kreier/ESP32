@@ -35,7 +35,7 @@ void loop() {
   temperature = temperature / 10; 
   //Serial.print("Temperature right now: ");
   Serial.println(temperature);
-  delay(50);
+  delay(10);
   digitalWrite(ledPin, dark);
-  delay(2000);
+  delay(1000);
 }
