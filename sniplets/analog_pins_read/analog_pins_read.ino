@@ -9,7 +9,6 @@ const int adc2[10] = {4, 0, 2, 15, 13, 12, 14, 27, 25, 26};
 int raw, voltage;
 
 void setup() {
-  pinMode(ledPin, OUTPUT);
   Serial.begin(115200);
   Serial.println("Let's start!");
 }  
@@ -18,9 +17,10 @@ void loop() {
   measureADC( 1 );
   measureADC( 2 );
   Serial.println("---- finished ------");
-  digitalWrite(ledPin, 0);
   delay(10000);
+  pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin, 1);
+  delay(100);
 }
 
 void measureADC(int adc) {
@@ -42,13 +42,15 @@ void measureADC(int adc) {
       raw += analogRead( pinMeasure );
     }
     voltage = 0.00826 * raw + 150;
+    if(voltage > 3300) voltage = 3300;
     Serial.print(string1);
-    printSerial(i);
+    Serial.print(i);
     Serial.print(" raw: ");
-    Serial.print(raw / 100);
+    printSerial(raw / 100);
     Serial.print(" voltage: ");
     printSerial(voltage);
-    Serial.println(" mV");
+    Serial.print(" mV on pin");
+    Serial.println(pinMeasure);
   }  
 }
 
@@ -56,5 +58,5 @@ void printSerial(int value) {
   if(value < 10) Serial.print(" ");
   if(value < 100) Serial.print(" ");
   if(value < 1000) Serial.print(" ");
-  Serial.print(value);   
+  Serial.print(value);
 }
