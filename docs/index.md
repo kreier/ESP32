@@ -4,15 +4,23 @@ After working with Arduino since 2015 I was more and more challenged by the limi
 
 Thanks to advancements you can get now an TTGO T-Display with WiFi, LiPo battery charge controller, USB-C connector, two input buttons and 1.18" color IPS display 135x240px for less than an original Arduino Uno with USB-B and without everything else. So let's list some repositories that build on the ESP32:
 
-## [solarmeter](../solar/solarmeter) 
+## [Solarmeter](../solar/solarmeter) 
 
 __2020/06/23__
 
 Measures the created electric energy on our renewable energy station at AISVN including photovoltaic cells, wind generator, battery voltages and temperature
 
+## [T-Display](../t-display)
+
+__2020/11/24__
+
+A const effective solution for students to enter the world of programming their own devices. With integrated display and battery connector their projects can be carried anywhere and the results shown to others. The integrated WiFi connects to the world.
+
 ## [T200](../T200) 
 
-robot car controlled by Bluetooth BLE 2019/04/08
+__2019/04/08__
+
+robot car controlled by Bluetooth BLE 
 
 ## Further smaller projects
 
