@@ -1,9 +1,32 @@
 # ESP32 projects
 
+After working with Arduino since 2015 I was more and more challenged by the limitations and needs of exernal modules to expand the capabilites. Since 2018 I started to first work with the [ESP8266](../ESP8266) thanks to the included WiFi and later to this ESP32 for faster speed, more storage and integrated Bluetooth.
+
+Thanks to advancements you can get now an TTGO T-Display with WiFi, LiPo battery charge controller, USB-C connector, two input buttons and 1.18" color IPS display 135x240px for less than an original Arduino Uno with USB-B and without everything else. So let's list some repositories that build on the ESP32:
+
+## [Solarmeter](../solar/solarmeter) 
+
+__2020/06/23__
+
+Measures the created electric energy on our renewable energy station at AISVN including photovoltaic cells, wind generator, battery voltages and temperature
+
+## [T-Display](../t-display)
+
+__2020/11/24__
+
+A const effective solution for students to enter the world of programming their own devices. With integrated display and battery connector their projects can be carried anywhere and the results shown to others. The integrated WiFi connects to the world.
+
+## [T200](../T200) 
+
+__2019/04/08__
+
+robot car controlled by Bluetooth BLE 
+
+## Further smaller projects
+
 The ESP32 are well suited for our data collection project at AISVN with many analog pins, deep sleep modes to work long on battery power and WiFi capabilities to transfer data to the internet. This is accompanied by sufficient fast processing power and large memory. Some projects that use the ESP32 are:
 
-- [solarmeter](https://github.com/kreier/solarmeter) Measures the created electric energy on our renewable energy station at AISVN including photovoltaic cells, wind generator, battery voltages and temperature 2020/06/23
-- [T200](https://github.com/kreier/T200) robot car controlled by Bluetooth BLE 2019/04/08
+
 - [Webserver in MicroPython](https://github.com/kreier/python2018/tree/master/micropython/webserver) with button control 2019/12/16
 
 ![Webserver LED control](https://raw.githubusercontent.com/kreier/python2018/master/micropython/webserver/20191216.gif)
@@ -46,7 +69,7 @@ We had several Arduino Uno projects at our school. But soon you want to add some
 
 ### [Visit the Wiki](https://github.com/kreier/ESP32/wiki)!
 
-![ESP32](docs/IMG-5684.JPG)
+![ESP32](pic/IMG-5684.JPG)
 
 ## Blink
 Unlike the Arduino the build-in LED is not connected to pin 13, but pin 2. Everything else is the same. Once it blinks you know that the module works, you can upload stuff and you have a simple output signal for further experiments. If you use the board "**DOIT ESP32 DEVKIT V1**" you can use the "**File > Examples > 01.Basics > Blink** out of the box.
