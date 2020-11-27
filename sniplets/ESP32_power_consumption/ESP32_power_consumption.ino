@@ -5,7 +5,7 @@
 #include <esp_wifi.h>
 #include <esp_bt.h>
 #include <Wire.h>
-#include <credentials.h>  // WiFi credentials in separate file
+#include <credentials_phumy.h>  // WiFi credentials in separate file
 #include <soc/sens_reg.h>
 #include "driver/adc.h"
 
