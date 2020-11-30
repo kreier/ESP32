@@ -1,5 +1,8 @@
 # ESP32 projects
 
+[![GitHub release](https://img.shields.io/github/release/kreier/ESP32.svg)](https://GitHub.com/kreier/ESP32/releases/)
+[![MIT license](https://img.shields.io/github/license/kreier/ESP32)](https://kreier.mit-license.org/)
+
 The ESP32 are well suited for our data collection project at AISVN with many analog pins, deep sleep modes to work long on battery power and WiFi capabilities to transfer data to the internet. This is accompanied by sufficient fast processing power and large memory. Some projects that use the ESP32 are:
 
 - [solarmeter](https://github.com/kreier/solarmeter) Measures the created electric energy on our renewable energy station at AISVN including photovoltaic cells, wind generator, battery voltages and temperature 2020/06/23
