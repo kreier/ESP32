@@ -5,6 +5,7 @@
 
 The ESP32 are well suited for our data collection project at AISVN with many analog pins, deep sleep modes to work long on battery power and WiFi capabilities to transfer data to the internet. This is accompanied by sufficient fast processing power and large memory. Some projects that use the ESP32 are:
 
+- [TTGO T-Display ESP32 board](https://github.com/kreier/t-display) Small board with display, two buttons and battery connector 2020/11/24
 - [solarmeter](https://github.com/kreier/solarmeter) Measures the created electric energy on our renewable energy station at AISVN including photovoltaic cells, wind generator, battery voltages and temperature 2020/06/23
 - [T200](https://github.com/kreier/T200) robot car controlled by Bluetooth BLE 2019/04/08
 - [Webserver in MicroPython](https://github.com/kreier/python2018/tree/master/micropython/webserver) with button control 2019/12/16
