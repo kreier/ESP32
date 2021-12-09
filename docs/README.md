@@ -5,7 +5,16 @@
 
 After working with Arduino since 2015 I was more and more challenged by the limitations and needs of exernal modules to expand the capabilites. Since 2018 I started to first work with the [ESP8266](../ESP8266) thanks to the included WiFi and later to this ESP32 for faster speed, more storage and integrated Bluetooth.
 
-Thanks to advancements you can get now an TTGO T-Display with WiFi, LiPo battery charge controller, USB-C connector, two input buttons and 1.18" color IPS display 135x240px for less than an original Arduino Uno with USB-B and without everything else. So let's list some repositories that build on the ESP32:
+Thanks to advancements you can get now an TTGO T-Display with WiFi, LiPo battery charge controller, USB-C connector, two input buttons and 1.18" color IPS display 135x240px for less than an original Arduino Uno (with just USB-B and nothing else). So let's list some repositories that build on the ESP32:
+
+## [T-Display](../t-display)
+
+<img src="ESP32-starfield.gif" align="right">
+
+__2020/11/24__
+
+A cost effective solution for students to enter the world of programming their own devices. With integrated display and battery connector their projects can be carried anywhere and the results shown to others. The integrated WiFi connects to the world.
+
 
 ## [Solarmeter](../solar/solarmeter) 
 
@@ -13,17 +22,12 @@ __2020/06/23__
 
 Measures the created electric energy on our renewable energy station at AISVN including photovoltaic cells, wind generator, battery voltages and temperature
 
-## [T-Display](../t-display)
-
-__2020/11/24__
-
-A const effective solution for students to enter the world of programming their own devices. With integrated display and battery connector their projects can be carried anywhere and the results shown to others. The integrated WiFi connects to the world.
 
 ## [T200](../T200) 
 
 __2019/04/08__
 
-robot car controlled by Bluetooth BLE 
+A robot car controlled by Bluetooth BLE.
 
 ## Further smaller projects
 
@@ -72,7 +76,7 @@ We had several Arduino Uno projects at our school. But soon you want to add some
 
 ### [Visit the Wiki](https://github.com/kreier/ESP32/wiki)!
 
-![ESP32](pic/IMG-5684.JPG)
+![ESP32](IMG-5684.JPG)
 
 ## Blink
 Unlike the Arduino the build-in LED is not connected to pin 13, but pin 2. Everything else is the same. Once it blinks you know that the module works, you can upload stuff and you have a simple output signal for further experiments. If you use the board "**DOIT ESP32 DEVKIT V1**" you can use the "**File > Examples > 01.Basics > Blink** out of the box.
