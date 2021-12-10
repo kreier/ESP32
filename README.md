@@ -3,6 +3,34 @@
 [![GitHub release](https://img.shields.io/github/release/kreier/ESP32.svg)](https://GitHub.com/kreier/ESP32/releases/)
 [![MIT license](https://img.shields.io/github/license/kreier/ESP32)](https://kreier.mit-license.org/)
 
+After working with Arduino since 2015 I was more and more challenged by the limitations and needs of exernal modules to expand the capabilites. Since 2018 I started to first work with the [ESP8266](../ESP8266) thanks to the included WiFi and later to this ESP32 for faster speed, more storage and integrated Bluetooth.
+
+Thanks to advancements you can get now an TTGO T-Display with WiFi, LiPo battery charge controller, USB-C connector, two input buttons and 1.18" color IPS display 135x240px for less than an original Arduino Uno (with just USB-B and nothing else). So let's list some repositories that build on the ESP32:
+
+## [T-Display](../t-display)
+
+<img src="ESP32-starfield.gif" align="right">
+
+__2020/11/24__
+
+A cost effective solution for students to enter the world of programming their own devices. With integrated display and battery connector their projects can be carried anywhere and the results shown to others. The integrated WiFi connects to the world.
+
+
+## [Solarmeter](../solar/solarmeter) 
+
+__2020/06/23__
+
+Measures the created electric energy on our renewable energy station at AISVN including photovoltaic cells, wind generator, battery voltages and temperature
+
+
+## [T200](../T200) 
+
+__2019/04/08__
+
+A robot car controlled by Bluetooth BLE .
+
+## Further smaller projects
+
 The ESP32 are well suited for our data collection project at AISVN with many analog pins, deep sleep modes to work long on battery power and WiFi capabilities to transfer data to the internet. This is accompanied by sufficient fast processing power and large memory. Some projects that use the ESP32 are:
 
 - [TTGO T-Display ESP32 board](https://github.com/kreier/t-display) Small board with display, two buttons and battery connector 2020/11/24
@@ -37,6 +65,35 @@ Scanning address range 0x00-0x7F
 ```
 
 - [startup-post](startup-post) See a message at [https://sites.google.com/view/startup-post](https://sites.google.com/view/startup-post) after a succesfull boot and internet connection of your IoT project.
+
+## Power Consumption
+
+The measurements were taken at 28/11/2020 and are documented in the Excel file in [ESP power consumption](https://github.com/kreier/ESP32/tree/master/sniplets/ESP32_power_consumption).
+
+All values are in mA:
+
+|               |   TTGO  |    TTGO   |   TTGO  |     WEMOS    |    DOIT   |
+|---------------|:-------:|:---------:|:-------:|:------------:|:---------:|
+| USB           | T18 3.0 | T-Display | T-Koala | LoLin32 lite | DEVKIT V1 |
+| on            | 47      | 68        | 35,8    | 47           | 68        |
+| wifi          | 70      | 108       | 100     | 83           | 100       |
+| wifi transmit | 85      |           |         | 116          | 151       |
+| radio off     |         |           |         | 47           | 56        |
+| 80 MHz        | 35      |           |         | 60           | 38        |
+| light sleep   | 19      |           | 0,79    | 8            | 17        |
+| deep sleep    |         | 0,35      |         | 4            | 16        |
+
+And now looking for prospect temp station candidates:
+
+| LiPo          | T-Display | T-Koala | LoLin32 lite |
+|---------------|:---------:|:-------:|:------------:|
+| on            | 68        | 50      | 43           |
+| wifi          |           | 104     | 73           |
+| wifi transmit | 108       | 131     | 103          |
+| radio off     |           | 37      | 43           |
+| 80 MHz        |           | 21      | 24           |
+| light sleep   |           | 2,5     | 1,6          |
+| deep sleep    | 0,35      | 0,79    | 0,063        |
 
 ## History
 

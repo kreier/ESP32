@@ -64,6 +64,36 @@ Scanning address range 0x00-0x7F
 
 - [startup-post](startup-post) See a message at [https://sites.google.com/view/startup-post](https://sites.google.com/view/startup-post) after a succesfull boot and internet connection of your IoT project.
 
+## Power Consumption
+
+The measurements were taken at 28/11/2020 and are documented in the Excel file in [ESP power consumption](https://github.com/kreier/ESP32/tree/master/sniplets/ESP32_power_consumption).
+
+All values are in mA:
+
+|               |   TTGO  |    TTGO   |   TTGO  |     WEMOS    |    DOIT   |
+|---------------|:-------:|:---------:|:-------:|:------------:|:---------:|
+| USB           | T18 3.0 | T-Display | T-Koala | LoLin32 lite | DEVKIT V1 |
+| on            | 47      | 68        | 35,8    | 47           | 68        |
+| wifi          | 70      | 108       | 100     | 83           | 100       |
+| wifi transmit | 85      |           |         | 116          | 151       |
+| radio off     |         |           |         | 47           | 56        |
+| 80 MHz        | 35      |           |         | 60           | 38        |
+| light sleep   | 19      |           | 0,79    | 8            | 17        |
+| deep sleep    |         | 0,35      |         | 4            | 16        |
+
+And now looking for prospect temp station candidates:
+
+| LiPo          | T-Display | T-Koala | LoLin32 lite |
+|---------------|:---------:|:-------:|:------------:|
+| on            | 68        | 50      | 43           |
+| wifi          |           | 104     | 73           |
+| wifi transmit | 108       | 131     | 103          |
+| radio off     |           | 37      | 43           |
+| 80 MHz        |           | 21      | 24           |
+| light sleep   |           | 2,5     | 1,6          |
+| deep sleep    | 0,35      | 0,79    | 0,063        |
+
+
 ## History
 
 This repository started in March 2019. I was new to the ESP8266 and ESP32 and took the first steps with both, documentation on GitHub and using BLE. The [T200](https://github.com/kreier/T200) was a successful robot car project from this time, controlled by Bluetooth BLE.
