@@ -78,20 +78,20 @@ All values are in mA:
 | wifi transmit | 85      |           |         | 116          | 151       |
 | radio off     |         |           |         | 47           | 56        |
 | 80 MHz        | 35      |           |         | 60           | 38        |
-| light sleep   | 19      |           | 0,79    | 8            | 17        |
-| deep sleep    |         | 0,35      |         | 4            | 16        |
+| light sleep   | 19      |           | 0.79    | 8            | 17        |
+| deep sleep    |         | 0.35      |         | 4            | 16        |
 
 And now looking for prospect temp station candidates:
 
 | LiPo          | T-Display | T-Koala | LoLin32 lite |
 |---------------|:---------:|:-------:|:------------:|
-| on            | 68        | 50      | 43           |
-| wifi          |           | 104     | 73           |
+| on            | 66        | 50      | 43           |
+| wifi          | 80-140    | 104     | 73           |
 | wifi transmit | 108       | 131     | 103          |
 | radio off     |           | 37      | 43           |
-| 80 MHz        |           | 21      | 24           |
-| light sleep   |           | 2,5     | 1,6          |
-| deep sleep    | 0,35      | 0,79    | 0,063        |
+| 80 MHz        | 48        | 21      | 24           |
+| light sleep   | 9         | 2.5     | 1.6          |
+| deep sleep    | 0.35      | 0.79    | 0.063        |
 
 
 ## History
