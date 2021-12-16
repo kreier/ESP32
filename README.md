@@ -9,7 +9,7 @@ Thanks to advancements you can get now an TTGO T-Display with WiFi, LiPo battery
 
 ## [T-Display](../t-display)
 
-<img src="ESP32-starfield.gif" align="right">
+<img src="docs/ESP32-starfield.gif" align="right">
 
 __2020/11/24__
 
