@@ -76,11 +76,11 @@ All values are in mA:
 |---------------|:-------:|:---------:|:-------:|:------------:|:---------:|
 | USB           | T18 3.0 | T-Display | T-Koala | LoLin32 lite | DEVKIT V1 |
 | on            | 47      | 68        | 35,8    | 47           | 68        |
-| wifi          | 70      | 108       | 100     | 83           | 100       |
-| wifi transmit | 85      |           |         | 116          | 151       |
+| wifi          | 70      | 83        | 100     | 83           | 100       |
+| wifi transmit | 85      | 108       |         | 116          | 151       |
 | radio off     |         |           |         | 47           | 56        |
 | 80 MHz        | 35      |           |         | 60           | 38        |
-| light sleep   | 19      |           | 0,79    | 8            | 17        |
+| light sleep   | 19      | 9         | 0,79    | 8            | 17        |
 | deep sleep    |         | 0,35      |         | 4            | 16        |
 
 And now looking for prospect temp station candidates:
@@ -88,12 +88,12 @@ And now looking for prospect temp station candidates:
 | LiPo          | T-Display | T-Koala | LoLin32 lite |
 |---------------|:---------:|:-------:|:------------:|
 | on            | 68        | 50      | 43           |
-| wifi          |           | 104     | 73           |
+| wifi          | 84        | 104     | 73           |
 | wifi transmit | 108       | 131     | 103          |
 | radio off     |           | 37      | 43           |
 | 80 MHz        |           | 21      | 24           |
-| light sleep   |           | 2,5     | 1,6          |
-| deep sleep    | 0,35      | 0,79    | 0,063        |
+| light sleep   | 9         | 2,5     | 1,6          |
+| deep sleep    | 0,18      | 0,79    | 0,063        |
 
 ## History
 
