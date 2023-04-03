@@ -1,0 +1,3 @@
+Adafruit CircuitPython 8.0.3 on 2023-02-23; ESP32 Devkit V1 with ESP32
+Board ID:doit_esp32_devkit_v1
+UID:4226BA7D4B4B
