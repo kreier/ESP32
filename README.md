@@ -1,7 +1,7 @@
 # ESP32 projects
 
-[![GitHub release](https://img.shields.io/github/release/kreier/ESP32.svg)](https://GitHub.com/kreier/ESP32/releases/)
 [![MIT license](https://img.shields.io/github/license/kreier/ESP32)](https://kreier.mit-license.org/)
+[![GitHub release](https://img.shields.io/github/v/release/kreier/ESP32)](https://GitHub.com/kreier/ESP32/releases/)
 
 After working with Arduino since 2015 I was more and more challenged by the limitations and needs of exernal modules to expand the capabilites. Since 2018 I started to first work with the [ESP8266](../ESP8266) thanks to the included WiFi and later to this ESP32 for faster speed, more storage and integrated Bluetooth.
 
